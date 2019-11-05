@@ -5,7 +5,7 @@ class Header extends Component {
         return /*html*/`
             <header>
             <div id ='logo'>🎆</div>
-       <div id='intro'> This is my photo gallery </div>
+    <div id='intro'> This is my photo gallery </div>
             </header>
         `;
     }

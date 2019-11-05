@@ -5,16 +5,16 @@ class FilterImages extends Component {
     onRender(select) {
         const onFilter = this.props.onFilter;
 
-        select.addEventListener('input', () => {
+        select.addEventListener('change', () => {
             onFilter(select.value);
-            console.log('yee'); 
+            console.log(select.value);
         });
     }
 
     renderHTML() {
         return /*html*/`
             <select class="image-type-filter">
-            <option value= "">All Pics</option>
+            <option value= "" selected>All Pics</option>
         <option value ='narwhal'>Narwahls</option>
         <option value ='rhino'>Rhinos</option>
         <option value ='unicorn'>Unicorns</option>
